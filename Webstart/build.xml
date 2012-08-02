@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+
+<project name="Webstart" basedir="." default="run">
+
+	<!-- Location of ga-worldwind-suite -->
+	<property name="suite_dir" value="${basedir}/../../ga-worldwind-suite" />
+
+	<!-- Build properties -->
+	<property name="perform_unit_tests" value="true" />
+	<property name="javac_debug" value="false" />
+
+	<!-- Project directories -->
+	<property name="viewer_dir" value="${suite_dir}/Viewer" />
+	<property name="animator_dir" value="${suite_dir}/Animator" />
+	<property name="common_dir" value="${suite_dir}/Common" />
+
+	<!-- Project library directories -->
+	<property name="viewer_webstart_dir" value="${viewer_dir}/target/webstart/selfsigned" />
+	<property name="animator_webstart_dir" value="${animator_dir}/target/webstart/selfsigned" />
+
+	<!-- Output -->
+	<property name="output_dir" value="${basedir}/jars" />
+
+
+	<target name="viewer-sign">
+		<ant antfile="${viewer_dir}/build.xml" target="sign" dir="${viewer_dir}" inheritall="false">
+			<property name="javac_debug" value="${javac_debug}" />
+			<property name="perform_unit_tests" value="${perform_unit_tests}" />
+			<property name="user.dir" value="${viewer_dir}" />
+		</ant>
+	</target>
+
+	<target name="animator-sign">
+		<ant antfile="${animator_dir}/build.xml" target="sign" dir="${animator_dir}" inheritall="false">
+			<property name="javac_debug" value="${javac_debug}" />
+			<property name="perform_unit_tests" value="${perform_unit_tests}" />
+			<property name="user.dir" value="${animator_dir}" />
+		</ant>
+	</target>
+
+	<target name="sign" depends="viewer-sign, animator-sign" />
+
+	<target name="deploy" depends="sign">
+		<mkdir dir="${output_dir}" />
+
+		<copy todir="${output_dir}">
+			<fileset dir="${animator_webstart_dir}">
+				<include name="*.jar" />
+			</fileset>
+			<fileset dir="${viewer_webstart_dir}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target name="run" depends="deploy" />
+
+</project>
