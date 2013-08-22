@@ -23,36 +23,55 @@
 		<jar href="../jars/worldwindx.jar" />
 		<jar href="../jars/gdal.jar" />
 		<jar href="../jars/jhlabs-filters.jar" />
-		<!-- Java.net jogl jar certificate has expired. Using jars on NASA servers instead. -->
-		<!-- <extension name="jogl" href="http://download.java.net/media/jogl/builds/archive/jsr-231-webstart-current/jogl.jnlp" /> -->
-		<extension name="jogl" href="http://worldwind.arc.nasa.gov/java/jogl/webstart/jogl.jnlp"/>
+		<jar href="../jars/gluegen-rt.jar" />
+		<jar href="../jars/jogl-all.jar" />
+		<jar href="../jars/JRift.jar" />
+		<jar href="../jars/SixenseJava.jar" />
 	</resources>
 	<resources os="Windows" arch="x86">
 		<nativelib href="../jars/worldwind-natives-windows-i586.jar" />
+		<nativelib href="../jars/jogl-all-natives-linux-i586.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-windows-i586.jar" />
 	</resources>
 	<resources os="Windows" arch="amd64">
 		<nativelib href="../jars/worldwind-natives-windows-amd64.jar" />
+		<nativelib href="../jars/jogl-all-natives-windows-amd64.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-windows-amd64.jar" />
 	</resources>
 	<resources os="Windows" arch="x86_64">
 		<nativelib href="../jars/worldwind-natives-windows-amd64.jar" />
+		<nativelib href="../jars/jogl-all-natives-windows-amd64.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-windows-amd64.jar" />
 	</resources>
 	<resources os="Linux" arch="i386">
 		<nativelib href="../jars/worldwind-natives-linux-i586.jar" />
+		<nativelib href="../jars/jogl-all-natives-linux-i586.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-linux-i586.jar" />
 	</resources>
 	<resources os="Linux" arch="x86">
 		<nativelib href="../jars/worldwind-natives-linux-i586.jar" />
+		<nativelib href="../jars/jogl-all-natives-linux-i586.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-linux-i586.jar" />
 	</resources>
 	<resources os="Linux" arch="amd64">
 		<nativelib href="../jars/worldwind-natives-linux-amd64.jar" />
+		<nativelib href="../jars/jogl-all-natives-linux-amd64.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-linux-amd64.jar" />
 	</resources>
 	<resources os="Linux" arch="x86_64">
 		<nativelib href="../jars/worldwind-natives-linux-amd64.jar" />
+		<nativelib href="../jars/jogl-all-natives-linux-amd64.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-linux-amd64.jar" />
 	</resources>
 	<resources os="Mac OS X" arch="i386">
 		<nativelib href="../jars/worldwind-natives-macosx-universal.jar" />
+		<nativelib href="../jars/jogl-all-natives-macosx-universal.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-macosx-universal.jar" />
 	</resources>
 	<resources os="Mac OS X" arch="x86_64">
 		<nativelib href="../jars/worldwind-natives-macosx-universal.jar" />
+		<nativelib href="../jars/jogl-all-natives-macosx-universal.jar" />
+		<nativelib href="../jars/gluegen-rt-natives-macosx-universal.jar" />
 	</resources>
 	<application-desc main-class="au.gov.ga.worldwind.animator.application.Animator">
 	</application-desc>
