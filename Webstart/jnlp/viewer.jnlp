@@ -25,6 +25,7 @@
 		<jar href="../jars/jhlabs-filters.jar" />
 		<jar href="../jars/gluegen-rt.jar" />
 		<jar href="../jars/jogl-all.jar" />
+		<jar href="../jars/jinput.jar" />
 		<jar href="../jars/JRift.jar" />
 		<jar href="../jars/SixenseJava.jar" />
 	</resources>
