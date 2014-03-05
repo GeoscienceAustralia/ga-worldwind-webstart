@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp spec="1.0" codebase="https://raw.github.com/ga-m3dv/ga-worldwind-webstart/master/Webstart/jnlp" href="viewer.jnlp">
 	<information>
-		<title>World Wind Viewer</title>
+		<title>3D Data Viewer</title>
 		<vendor>Geoscience Australia</vendor>
 		<homepage href="http://www.ga.gov.au" />
 		<description></description>
@@ -25,7 +25,7 @@
 		<jar href="../jars/jinput.jar" />
 		<jar href="../jars/JRift.jar" />
 		<jar href="../jars/SixenseJava.jar" />
-		<extension name="jogl-all-awt" href="http://jogamp.org/deployment/v2.0.2/jogl-all-awt.jnlp" />
+		<extension name="jogl-all-awt" href="http://jogamp.org/deployment/v2.1.4/jogl-all-awt.jnlp" />
 	</resources>
 	<resources os="Windows" arch="x86">
 		<nativelib href="../jars/worldwind-natives-windows-i586.jar" />
