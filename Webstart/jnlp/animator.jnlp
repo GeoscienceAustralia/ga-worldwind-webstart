@@ -25,7 +25,7 @@
 		<jar href="../jars/jinput.jar" />
 		<jar href="../jars/JRift.jar" />
 		<jar href="../jars/SixenseJava.jar" />
-		<extension name="jogl-all-awt" href="http://jogamp.org/deployment/v2.0.2/jogl-all-awt.jnlp" />
+		<extension name="jogl-all-awt" href="http://jogamp.org/deployment/v2.1.4/jogl-all-awt.jnlp" />
 	</resources>
 	<resources os="Windows" arch="x86">
 		<nativelib href="../jars/worldwind-natives-windows-i586.jar" />
